@@ -1,0 +1,6 @@
+Q1 String / StringBuilder / StringBuffer comparison
+fields=6 tickets=1 | plus=15650 ns | builder=12952 ns | buffer=7330 ns
+fields=50 tickets=10000 | plus=32845454 ns | builder=9307714 ns | buffer=10681629 ns
+fields=100 tickets=3000 | plus=40884925 ns | builder=6738167 ns | buffer=20301272 ns
+Per-ticket recommendation: StringBuilder. Shared concurrent log: synchronize access or use a thread-safe logging mechanism; StringBuffer alone does not make a multi-step log operation atomic.
+Estimated intermediate concatenation strings for repeated + grow with fields; builders use one mutable buffer plus final String.

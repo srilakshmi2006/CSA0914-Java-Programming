@@ -1,0 +1,6 @@
+Q2 ArrayList vs LinkedList (nanoseconds; one local run)
+n=1000 | random access A=1554054 L=8402943 | front insert A=834832 L=401663 | iterate A=660625 L=646724
+n=10000 | random access A=895612 L=60435021 | front insert A=595198 L=104685 | iterate A=808063 L=722006
+n=50000 | random access A=1233891 L=260908495 | front insert A=2443638 L=67660 | iterate A=3000910 L=3214445
+Up Next ArrayDeque example: [Next]
+Conclusion: ArrayList suits frequent indexed reads and iteration; LinkedList only when frequent edits through an already-held iterator/node justify its overhead. ArrayDeque suits double-ended queues.

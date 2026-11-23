@@ -1,0 +1,11 @@
+Treatment order (poll repeatedly):
+Bala(S1)
+Divya(S1)
+Charan(S2)
+Hari(S2)
+Asha(S3)
+Farhan(S3)
+Gita(S4)
+Esha(S5)
+PriorityQueue add/poll: O(log n); peek: O(1); storage O(n).
+Starvation risk: continuous critical arrivals can delay minor cases. Apply waiting-time ageing or a maximum-wait escalation policy.

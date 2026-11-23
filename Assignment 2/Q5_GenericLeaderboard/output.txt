@@ -1,0 +1,4 @@
+Leaderboard: [Tigers(18,15), Wolves(18,15), Falcons(18,12), Eagles(15,8)]
+Comparator contract: transitive, consistent ordering; name is final tie-breaker.
+Sorting n items: O(n log n) time; copied list O(n) extra space.
+Comparator is reusable for different types/rules; Comparable defines one natural order for a type.

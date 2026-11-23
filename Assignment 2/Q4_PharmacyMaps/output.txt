@@ -1,0 +1,6 @@
+n=1000 | 100k HashMap lookups=275246458 ns | TreeMap lookups=211725835 ns | sort HashMap report=1000677 ns | TreeMap ordered report=462022 ns
+n=10000 | 100k HashMap lookups=207226073 ns | TreeMap lookups=87810025 ns | sort HashMap report=4933292 ns | TreeMap ordered report=322827 ns
+n=50000 | 100k HashMap lookups=92095551 ns | TreeMap lookups=86051960 ns | sort HashMap report=27109796 ns | TreeMap ordered report=3049070 ns
+Insertion order (LinkedHashMap): [M2, M1]
+Code order (TreeMap): [M1, M2]
+Recommendation: HashMap for fastest lookup, TreeMap for continuously sorted code report, LinkedHashMap for insertion-order report. Hashtable is legacy synchronized API; modern alternatives are clearer.

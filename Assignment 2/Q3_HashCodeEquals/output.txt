@@ -1,0 +1,7 @@
+Corrected HashSet unique students: 2 (expected 2)
+Set: [ECE101-Asha, ECE102-Bala]
+Three test scans, two unique IDs: 2
+TreeSet unique by comparator: 2
+HashMap keys (unique IDs): 2
+HashSet/HashMap average lookup O(1); TreeSet O(log n); all store O(n) unique records.
+Fields used in hashCode/equals should be immutable while stored in a hash collection.

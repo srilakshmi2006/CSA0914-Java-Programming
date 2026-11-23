@@ -1,0 +1,7 @@
+Q7 redesign: repeated sorting of HashMap keys vs maintaining TreeMap order
+n=1000 | baseline sort report=4140757 ns | maintained sorted traversal=531895 ns
+n=10000 | baseline sort report=6718236 ns | maintained sorted traversal=11628840 ns
+n=50000 | baseline sort report=31802484 ns | maintained sorted traversal=1247784 ns
+Diagnosis: sorting all keys costs O(n log n) each report.
+Objective: keep code order continuously, so report traversal is O(n); TreeMap insertion/lookup is O(log n), with O(n) storage.
+Trade-off: TreeMap costs more per update than HashMap. For rare reports and many updates, sorting a HashMap on demand may remain preferable.
