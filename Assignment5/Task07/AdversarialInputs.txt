@@ -1,0 +1,1 @@
+Unsafe SQL test username: ' OR '1'='1' -- \nPreparedStatement expectation: rejected as a literal username.\nDamaged rows: wrong field count; amount=abc; empty line.\nUse only a local disposable test database.\n

@@ -1,0 +1,8 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "files.encoding": "utf8",
+  "editor.tabSize": 4,
+  "files.exclude": {
+    "**/*.class": true
+  }
+}

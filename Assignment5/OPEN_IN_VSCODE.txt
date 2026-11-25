@@ -1,0 +1,11 @@
+VS CODE PROJECT FOLDER
+1. Extract this folder.
+2. Open Visual Studio Code.
+3. Choose File > Open Folder and select this assignment folder (or open the .code-workspace file).
+4. Install the recommended Extension Pack for Java when prompted.
+5. Open the required Task folder and its .java file.
+6. Use Run Java above the main method, or open Terminal in that Task folder and run:
+   javac FileName.java
+   java ClassName
+7. Swing tasks require a desktop environment. JDBC tasks require a configured database and JDBC driver.
+Some written/design tasks do not have a standalone Java program; use their Answer_Notes.md and supplied schema/code where included.

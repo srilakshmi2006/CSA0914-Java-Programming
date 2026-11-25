@@ -1,0 +1,1 @@
+Add: P1003|REG03|Anu|12|Central|2027-03-31|500\nFind P1003: P1003 record\nFind missing P9999: null\nDamaged line: P1002|REG02|Bala|12|Depot|2027-03-31 (wrong field count; skipped)\n
